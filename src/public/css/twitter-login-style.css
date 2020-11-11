@@ -1,0 +1,11 @@
+.oauth-button {
+    display: block;
+    background-color: rgb(29, 161, 242);
+    padding: 1rem 4rem;
+    color: #fff;
+    border-radius: 0.4rem;
+}
+.oauth-button:hover {
+    background-color: rgb(201, 235, 255);
+    color: rgb(29, 161, 242);
+}
