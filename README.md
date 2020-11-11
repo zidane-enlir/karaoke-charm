@@ -1,7 +1,5 @@
 # Karaoke Charm
 
-## Inspired By [Webpack/README](https://github.com/webpack/webpack/blob/master/README.md)
-
 ![Playlist System 1](img/readme_logo31.png)
 ![Playlist System 2](img/readme_logo32.png)
 
