@@ -3,7 +3,7 @@
 ![Playlist System 1](img/readme_logo31.png)
 ![Playlist System 2](img/readme_logo32.png)
 
-## Table of Contents
+<h2 align="center">Table of Contents</h2>
 
 1. [Getting Started](#getting-started)
 2. [Environments](#environments)
@@ -25,13 +25,13 @@
 |                                                                                 Icon                                                                                  |     Name      |   Version   | Description                                                                             |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------: | :--------------: | :-------------------------------------------------------------------------------------- |
 | <a href="https://www.php.net/docs.php" target=”_blank”><img width="48" height="48" src="./img/materials/php.png"></a>    |   PHP   |   7.3   | general-purpose scripting language especially suited to web development.      |
-| <a href="#" target=”_blank”><img width="48" height="48" src="./img/materials/laravel.png"></a> |  Laravel    |   6.18.40   | PHP web framework, created by Taylor Otwell    |
-| <a href="#" target=”_blank”><img width="48" height="48" src="./img/materials/intervention_image.png"></a>  |  intervention/image  |  2.5.1  |  (Supposed to be written)   |
-| <a href="#" target=”_blank”><img width="48" height="48" src="./img/materials/spotify.png"></a>   | aerni/laravel-spotify |  -  | (Supposed to be written)  |
-| <a href="#" target=”_blank”><img width="48" height="48" src="./img/materials/laravel.png"></a>   |  barryvdh/laravel-debugbar   |  3.5.1    | (Supposed to be written)  |
-| <a href="#" target=”_blank”><img width="48" height="48" src="./img/materials/laravel.png"></a>   |  nunomaduro/larastan  |  0.6.9  | (Supposed to be written)  |
-| <a href="#" target=”_blank”><img width="48" height="48" src="./img/materials/mysql.png"></a>   |  MySQL   |  5.7   | (Supposed to be written)  |
-| <a href="#" target=”_blank”><img width="48" height="48" src="./img/materials/nginx.png"></a>   |  Nginx   |  1.19   | (Supposed to be written)  |
+| <a href="#" target=”_blank”><img width="72" height="48" src="./img/materials/laravel.png"></a> |  Laravel    |   6.18.40   | PHP web framework, created by Taylor Otwell    |
+| <a href="#" target=”_blank”><img width="72" height="48" src="./img/materials/intervention_image.png"></a>  |  intervention/image  |  2.5.1  |  (Supposed to be written)   |
+| <a href="#" target=”_blank”><img width="72" height="48" src="./img/materials/spotify.png"></a>   | aerni/laravel-spotify |  -  | (Supposed to be written)  |
+| <a href="#" target=”_blank”><img width="72" height="48" src="./img/materials/laravel.png"></a>   |  barryvdh/laravel-debugbar   |  3.5.1    | (Supposed to be written)  |
+| <a href="#" target=”_blank”><img width="72" height="48" src="./img/materials/laravel.png"></a>   |  nunomaduro/larastan  |  0.6.9  | (Supposed to be written)  |
+| <a href="#" target=”_blank”><img width="72" height="48" src="./img/materials/mysql.png"></a>   |  MySQL   |  5.7   | (Supposed to be written)  |
+| <a href="#" target=”_blank”><img width="72" height="48" src="./img/materials/nginx.png"></a>   |  Nginx   |  1.19   | (Supposed to be written)  |
 
 
 <h2 align="center">Installation</h2>
@@ -78,7 +78,7 @@ php artisan migrate --seed
 ~~~
 
 
-## Run tests
+<h2 align="center">Run tests</h2>
 
 ~~~bash
 # 全て実行
@@ -86,8 +86,8 @@ php artisan migrate --seed
 ~~~
 
 
-## Authors
+<h2 align="center">Authors</h2>
 [Noël (zidane-enlir)](https://github.com/zidane-enlir)
 
-## License
+<h2 align="center">License</h2>
 This project is licensed under the MIT License  
