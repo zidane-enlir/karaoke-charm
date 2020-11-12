@@ -39,7 +39,6 @@ class TrackImageRepository implements TrackImageRepositoryInterface
     {
         $this->trackImage->image_url = $filename;
         
-        // $track = Track::find();
         $this->track->trackImage()->save($this->trackImage);
 
         return;

@@ -9,16 +9,7 @@ use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Schema;
-
-
-// use PHPUnit\Framework\TestCase;
 use Tests\TestCase;
-
-
-/**
- * [参照したテスト手法]
- * https://medium.com/@tonyfrenzy/part-2-testing-model-relationships-in-laravel-basic-8b606dd36c02
- */
 
 class TrackTest extends TestCase
 {
@@ -101,15 +92,4 @@ class TrackTest extends TestCase
             'updated_at'
         ]), 1);
     }
-
-    // /**
-    //  * プレイリストに登録されている曲を返すことを確認。
-    //  * 
-    //  * @test
-    //  */
-    // public function getUserTracks()
-    // {
-    //     // 
-    // }
-
 }

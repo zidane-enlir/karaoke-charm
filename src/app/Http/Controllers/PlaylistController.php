@@ -59,11 +59,8 @@ class PlaylistController extends Controller
      * 
      * @param int $playlist
      * @return \Illuminate\View\View $view
-     * 
-     * [検討] ルートモデルバインディングを用いるかどうか検討中
      */
     public function show(int $playlist)
-    // public function show(Playlist $playlist)
     {
         // showメソッドが認可されているかどうかの確認
         $this->authorize('view', $this->playlist->selectPlaylist($playlist));

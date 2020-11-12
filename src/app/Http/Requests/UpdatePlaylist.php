@@ -29,8 +29,5 @@ class UpdatePlaylist extends StorePlaylist
         $rule = parent::rules();
 
         return $rule;
-        // return $rule + [
-        //     'status' => 'required|' . $status_rule,
-        // ];
     }
 }

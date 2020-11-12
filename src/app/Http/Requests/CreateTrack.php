@@ -40,15 +40,4 @@ class CreateTrack extends FormRequest
             'artist' => 'アーティスト名'
         ];
     }
-
-    /**
-     * FormRequest クラス単位でエラーメッセージするために定義。
-     * 
-     * キーでメッセージが表示されるべきルールを指定する。
-     * ドット区切りで左側が項目、右側がルールを意味する。
-     */
-    // public function messages()
-    // {
-
-    // }
 }

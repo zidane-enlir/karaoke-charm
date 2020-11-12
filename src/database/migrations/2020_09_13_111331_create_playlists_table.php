@@ -19,7 +19,6 @@ class CreatePlaylistsTable extends Migration
             $table->string('name');
             $table->timestamps();
 
-            // 外部キーを設定する
             $table->foreign('user_id')->references('id')->on('users');
         });
     }

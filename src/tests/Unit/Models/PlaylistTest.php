@@ -10,15 +10,4 @@ class PlaylistTest extends TestCase
     {
         $this->assertTrue(true);
     }
-
-
-    // /**
-    //  * ログインユーザーが持つ全てのプレイリストを取得するかどうかテスト
-    //  * 
-    //  * @test
-    //  */
-    // public function GetAllAuthUserPlaylists()
-    // {
-    //     //
-    // }
 }

@@ -68,18 +68,7 @@ class TracksTableSeeder extends Seeder
                 'updated_at' => Carbon::now(),
             ]);
         }
-
-        /**
-         * Factoryを用いたシーディングも追加
-         * 
-         * https://sazaijiten.work/laravel_factory/
-         */
+        
         factory(App\Models\Track::class, 500)->create();
-
-        // factory(App\Models\Track::class, 500)
-        //     ->create()
-        //     ->each(function(App\Models\Track $track) {
-        //         $track->user()->associate(factory(App\Models\User::class)->create());
-        //     });
     }
 }

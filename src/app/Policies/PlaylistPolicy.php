@@ -23,23 +23,6 @@ class PlaylistPolicy
     }
 
     /**
-     * https://qiita.com/avocadoneko/items/658961b68a348a3cb3fd
-     * https://laravel.com/docs/6.x/authorization#writing-policies
-     * 
-     * 
-     * Controller Method	Policy Method
-     *   index   | viewAny
-     *   show    | view
-     *   create  | create
-     */
-    // public function viewAny (User $user)
-    // {
-    //     // return $user->id === $playlist->user_id;
-    //     return true;
-    // }
-
-
-    /**
      * showメソッドに対するポリシー
      * 
      * @param \App\Models\User $user

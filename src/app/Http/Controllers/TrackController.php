@@ -42,7 +42,6 @@ class TrackController extends Controller
      */
     public function index()
     {
-        // $this->track = Auth::user()->tracks()->get();
         $track = $this->track->getAllAuthUserTracks();
 
         return view('track/index')

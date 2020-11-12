@@ -29,12 +29,6 @@ class UsersTableSeeder extends Seeder
             'updated_at' => Carbon::now(),
         ]);
 
-
-        /**
-         * Factoryを用いたシーディングも追加
-         * 
-         * https://sazaijiten.work/laravel_factory/
-         */
         factory(App\Models\User::class, 100)
             ->create(['password' => bcrypt('12345678')]);
     }

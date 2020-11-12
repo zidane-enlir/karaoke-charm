@@ -28,8 +28,7 @@ services:
       MYSQL_PASSWORD: menta
       TZ: 'Asia/Tokyo'
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
-    command: --explicit_defaults_for_timestamp # <- 追加！
-    # command: validate_password_policy=LOW # <- 追加！
+    command: --explicit_defaults_for_timestamp
     volumes:
     - ./docker/db/data:/var/lib/mysql
     - ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
@@ -41,15 +40,12 @@ services:
     image: phpmyadmin/phpmyadmin:latest
     environment:
     - PMA_ARBITRARY=1
-    # PMA_HOST=mysqlではダメで、service名として書いたものを入力
     - PMA_HOST=db
     - PMA_USER=menta
     - PMA_PASSWORD=menta
     depends_on: 
     - db
-    # ERR_EMPTY_RESPONSE解決のポイント
     ports:
     - 8080:80
     volumes:
-    # - /sessions
     - ./docker/phpmyadmin/sessions:/sessions

@@ -134,12 +134,6 @@ class PlaylistControllerTest extends TestCase
                         'name'    => 'PlaylistTest01'
                         ]);
 
-        /**
-         * [assertCountは使用できないメソッドだと怒られた]
-         * BadMethodCallException: Call to undefined method Illuminate\Http\RedirectResponse::assertCount()
-         */
-        // $response->assertCount(1, Playlist::all());
-
         $response->assertRedirect(route('playlists.index'));
     }
 }

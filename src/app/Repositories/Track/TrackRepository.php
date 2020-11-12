@@ -112,7 +112,6 @@ class TrackRepository implements TrackRepositoryInterface
         $this->track = Track::findOrFail($track);
 
         try {
-            // $this->track->delete($this->track);
             $this->track->delete();
 
             return '曲情報の削除に成功しました。';
