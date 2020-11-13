@@ -71,10 +71,17 @@ php artisan key:genrate
 ~~~
 
 #### (6) マイグレーション & シーディング
+
 ~~~bash
 docker-compose exec php bash
 
 php artisan migrate --seed
+~~~
+
+#### (7) シンボリックリンクを作成
+
+~~~bash
+php artisan storage:link
 ~~~
 
 
