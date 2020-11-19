@@ -6,6 +6,8 @@ services:
     build: ./docker/php
     volumes:
     - ./src:/var/www
+    environment:
+    - COMPOSER_MEMORY_LIMIT= -1 /usr/bin/composer
 
   nginx:
     image: nginx

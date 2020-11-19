@@ -26,13 +26,16 @@ RUN apt-get update \
     && docker-php-ext-install -j$(nproc) gd
 
 # Composer install
-COPY --from=composer /usr/bin/composer /usr/bin/composer
+COPY --from=composer:1.10 /usr/bin/composer /usr/bin/composer
 
 # rootでのcomposerコマンド実行を許可
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
 # composerのグローバルパッケージがインストールされるディレクトリの指定
 ENV COMPOSER_HOME /composer
+
+# # composer使用時のみ、メモリ使用を無制限に設定
+# ENV COMPOSER_MEMORY_LIMIT -1
 
 # composerのパスを通す
 ENV PATH $PATH:/composer/vendor/bin
